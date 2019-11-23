@@ -55,4 +55,10 @@ public class Player : MonoBehaviour
         }
     }
 
-}
+    /*void OnTriggerEnter(Collider other)
+    {
+        GameObject.Find("Subtitulo");
+        SetActive(true);
+        "TextoSub".GetComponent<Text>.text = Text;
+    }
+    /*
