@@ -75,7 +75,6 @@ public class Player : MonoBehaviour
         {
             player.AddForce(new Vector2(0, forcejump));
             floor = false;
-            ceil = false;
             
         }
         
@@ -83,7 +82,6 @@ public class Player : MonoBehaviour
         {
            player.AddForce(new Vector2(0, -forcejump));
             ceil = false;
-            floor = false;
             
         }
         
