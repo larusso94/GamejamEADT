@@ -6,6 +6,7 @@ TagManager:
   tags:
   - techo
   - suelo
+  - ground
   layers:
   - Default
   - TransparentFX

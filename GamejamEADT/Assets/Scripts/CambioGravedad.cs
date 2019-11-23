@@ -24,7 +24,7 @@ if(Input.GetKeyDown(KeyCode.S)){
     
 void OnCollisionEnter2D(Collision2D other){
 
-    if(other.gameObject.tag == "suelo"){
+    if(other.gameObject.tag == "ground"){
 
         this.GetComponent<SpriteRenderer>().flipY = false;
 
