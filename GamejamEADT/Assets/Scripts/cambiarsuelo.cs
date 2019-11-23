@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cambiarsueloytecho : MonoBehaviour
+public class cambiarsuelo : MonoBehaviour
 {
     public GameObject Player;
     
@@ -14,7 +14,8 @@ public class cambiarsueloytecho : MonoBehaviour
 
 		}else{
 
-		
+			return;
+
 		}
 
 	}
