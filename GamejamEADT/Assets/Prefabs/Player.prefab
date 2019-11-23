@@ -134,9 +134,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aec38667fb33c04b98c61ee4ec99e52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  forcejump: 666
-  jump: 0
+  speed: 15
+  forcejump: 300
+  jumpup: 0
+  jumpdown: 0
 --- !u!114 &1750527007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,6 +150,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5efab722144b46846b6a617fd4df889c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 8971012937962282800}
+  dist: 0
+  gravityScale: 0
 --- !u!114 &9189616462829750040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,6 +168,7 @@ MonoBehaviour:
   player: {fileID: 8971012937962282800}
   ceil: {fileID: 0}
   ground: {fileID: 0}
+  D: 0
 --- !u!95 &1750527008
 Animator:
   serializedVersion: 3
