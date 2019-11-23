@@ -127,17 +127,17 @@ PrefabInstance:
     - target: {fileID: 1797203888016454785, guid: 616d30f611ebee8498425b4216ad524c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.345
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1797203888016454785, guid: 616d30f611ebee8498425b4216ad524c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.19299905
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1797203888016454785, guid: 616d30f611ebee8498425b4216ad524c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1797203888016454785, guid: 616d30f611ebee8498425b4216ad524c,
         type: 3}
@@ -182,7 +182,7 @@ PrefabInstance:
     - target: {fileID: 1797203888016454786, guid: 616d30f611ebee8498425b4216ad524c,
         type: 3}
       propertyPath: field of view
-      value: 77
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1797203888803139849, guid: 616d30f611ebee8498425b4216ad524c,
         type: 3}
@@ -204,6 +204,16 @@ PrefabInstance:
       propertyPath: m_Follow
       value: 
       objectReference: {fileID: 1750527011}
+    - target: {fileID: 1797203888785198009, guid: 616d30f611ebee8498425b4216ad524c,
+        type: 3}
+      propertyPath: m_DeadZoneHeight
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 1797203888785198009, guid: 616d30f611ebee8498425b4216ad524c,
+        type: 3}
+      propertyPath: m_SoftZoneHeight
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 616d30f611ebee8498425b4216ad524c, type: 3}
 --- !u!1 &226709066
@@ -416,6 +426,19 @@ PrefabInstance:
       propertyPath: speed
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 8971012937962282801, guid: 31214d78e5ee43d43811d47f00a59d81,
+        type: 3}
+      propertyPath: forcejump
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1750527007, guid: 31214d78e5ee43d43811d47f00a59d81, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1750527006}
+    - target: {fileID: 1750527007, guid: 31214d78e5ee43d43811d47f00a59d81, type: 3}
+      propertyPath: rigidbody
+      value: 
+      objectReference: {fileID: 1750527009}
     - target: {fileID: 9189616462829750040, guid: 31214d78e5ee43d43811d47f00a59d81,
         type: 3}
       propertyPath: ceil
@@ -534,6 +557,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5, y: 5}
   m_EdgeRadius: 0
+--- !u!1 &1750527006 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8971012937962282800, guid: 31214d78e5ee43d43811d47f00a59d81,
+    type: 3}
+  m_PrefabInstance: {fileID: 1141818989}
+  m_PrefabAsset: {fileID: 0}
+--- !u!50 &1750527009 stripped
+Rigidbody2D:
+  m_CorrespondingSourceObject: {fileID: 8971012937962282814, guid: 31214d78e5ee43d43811d47f00a59d81,
+    type: 3}
+  m_PrefabInstance: {fileID: 1141818989}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1750527011 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8971012937962282812, guid: 31214d78e5ee43d43811d47f00a59d81,
