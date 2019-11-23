@@ -4,44 +4,53 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
 
-    public float speed, forcejump, speedmax, aceleracion, frenada;
-    public bool jumpup, jumpdown;
-
+    public float forcejump, speedmax, aceleracion, frenada;
+    bool ceil, floor;
     // Start is called before the first frame update
     void Start()
     {
-
+       
 
     }
 
     // Update is called once per frame
     void Update()
     {
+        var player = gameObject.GetComponent<Rigidbody2D>();
+        float speed = player.velocity.x;
+
         if (Input.GetKey("left") || Input.GetKey("a"))
         {
-            if ((speed < speedmax) && (jumpup || jumpdown))
+            if ((Mathf.Abs(speed) < speedmax) && (ceil||floor))
             {
-                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2((-speed - aceleracion), 0));
+                player.AddForce(new Vector2((-aceleracion), 0));
                 gameObject.GetComponent<SpriteRenderer>().flipX = true;
             }
-        }
-        if (Input.GetKey("right") || Input.GetKey("d"))
+        } else if (Input.GetKey("right") || Input.GetKey("d"))
         {
-            if ((speed < speedmax) && (jumpup || jumpdown))
+            if ((speed < speedmax) && (ceil||floor))
             {
-                gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2((speed + aceleracion), 0));
+                player.AddForce(new Vector2((aceleracion), 0));
                 gameObject.GetComponent<SpriteRenderer>().flipX = false;
             }
+        } else{
+            if (speed<0 && (ceil||floor)) player.AddForce(new Vector2(aceleracion, 0));
+            if (speed>0 && (ceil||floor)) player.AddForce(new Vector2(-aceleracion, 0));
         }
-        if (Input.GetKeyDown(KeyCode.Space) && jumpup)
+        
+         
+
+        if (Input.GetKeyDown(KeyCode.Space) && floor)
         {
-            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, forcejump));
-            jumpup = false;
+            player.AddForce(new Vector2(0, forcejump));
+            floor = false;
+            ceil = false;
         }
-        if (Input.GetKeyDown(KeyCode.Space) && jumpdown)
+        if (Input.GetKeyDown(KeyCode.Space) && ceil)
         {
-           gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -forcejump));
-            jumpdown = false;
+           player.AddForce(new Vector2(0, -forcejump));
+            ceil = false;
+            floor = false;
         }
 
     }
@@ -49,11 +58,11 @@ public class Player : MonoBehaviour
         {
             if (collision.gameObject.tag == "ground")
             {
-                jumpup = true;
+                floor = true;
             }
             if (collision.gameObject.tag == "techo")
             {
-                jumpdown = true;
+                ceil = true;
             }
         }
     }
