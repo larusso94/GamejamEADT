@@ -6,6 +6,21 @@
 public class CambioGravedad : MonoBehaviour
 {
 
+    void Update(){
+
+if(Input.GetKeyDown(KeyCode.W)){
+
+        this.GetComponent<Rigidbody2D>().gravityScale = -1;
+
+}
+if(Input.GetKeyDown(KeyCode.S)){
+
+        this.GetComponent<Rigidbody2D>().gravityScale = 1;
+
+}
+
+    }
+
     
 void OnCollisionEnter2D(Collision2D other){
 
