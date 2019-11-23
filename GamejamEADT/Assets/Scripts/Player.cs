@@ -72,32 +72,26 @@ public class Player : MonoBehaviour
          
 
         if (Input.GetKeyDown(KeyCode.Space) && floor)
-        {
-            
+        {            
             player.AddForce(new Vector2(0, forcejump));
-            floor = false;
-            animator.SetBool("cambiando", false);
+            floor = false;            
         }
         
         if (Input.GetKeyDown(KeyCode.Space) && ceil)
-        {
-            
+        {            
             player.AddForce(new Vector2(0, -forcejump));          
-            ceil = false;
-            animator.SetBool("cambiando", false);
+            ceil = false;           
         }
         
         if(!ceil && !floor)
         {
-            
-            animator.SetBool("cambiando", true);
-
+            animator.SetBool("Saltando", true);
 
         }
         else
         {
-            
-            animator.SetBool("cambiando", false);
+
+            animator.SetBool("Saltando", false);
 
         }
 
