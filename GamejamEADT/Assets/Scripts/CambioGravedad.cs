@@ -6,12 +6,13 @@
 public class CambioGravedad : MonoBehaviour
 {
 
-    
+    public GameObject Player;
     public float dist;
+    public float gravityScale;
 
     void Start(){
 
-        dist = GetComponent<Rigidbody2D>().gravityScale;
+        gravityScale = gameObject.GetComponent<Rigidbody2D>().gravityScale;
 
     }
 

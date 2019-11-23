@@ -13,7 +13,7 @@ public class GravityController : MonoBehaviour
      
      float ceilPos;
      float groundPos;
-      public float D;
+    public float D;
 
    void Start()
     {
@@ -30,7 +30,7 @@ public class GravityController : MonoBehaviour
     	groundPos = ground.transform.position.y + ground.GetComponent<BoxCollider2D>().size.y/2;
     	float d1 = player.transform.position.y - groundPos;
     	float d2 = ceilPos - player.transform.position.y;
-    	float factor = (d2 - d1)/D;
+    	public float factor = (d2 - d1)/D;
         gameObject.GetComponent<Rigidbody2D>().gravityScale = factor;
     }
 }
