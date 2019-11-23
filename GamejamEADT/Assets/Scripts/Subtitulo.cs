@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class gravitycontroller : MonoBehaviour
+public class Subtitulo : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
