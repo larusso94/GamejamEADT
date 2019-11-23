@@ -13,7 +13,7 @@ public class GravityController : MonoBehaviour
      
      float ceilPos;
      float groundPos;
-     float D;
+      public float D;
 
    void Start()
     {
