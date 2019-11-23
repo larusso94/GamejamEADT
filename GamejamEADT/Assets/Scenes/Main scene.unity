@@ -250,7 +250,7 @@ GameObject:
   - component: {fileID: 737394951}
   - component: {fileID: 737394950}
   m_Layer: 0
-  m_Name: New Sprite (1)
+  m_Name: Suelo
   m_TagString: ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -416,6 +416,16 @@ PrefabInstance:
       propertyPath: speed
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 9189616462829750040, guid: 31214d78e5ee43d43811d47f00a59d81,
+        type: 3}
+      propertyPath: ceil
+      value: 
+      objectReference: {fileID: 1284821031}
+    - target: {fileID: 9189616462829750040, guid: 31214d78e5ee43d43811d47f00a59d81,
+        type: 3}
+      propertyPath: ground
+      value: 
+      objectReference: {fileID: 737394948}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 31214d78e5ee43d43811d47f00a59d81, type: 3}
 --- !u!1 &1284821031
@@ -430,7 +440,7 @@ GameObject:
   - component: {fileID: 1284821033}
   - component: {fileID: 1284821034}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: Techo
   m_TagString: techo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

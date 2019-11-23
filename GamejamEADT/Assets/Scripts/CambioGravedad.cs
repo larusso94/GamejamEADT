@@ -6,35 +6,26 @@
 public class CambioGravedad : MonoBehaviour
 {
 
+    public GameObject Player;
+    float dist;
+
+    void Start(){
+
+        dist = Player.GetComponent<GravityController>.D;
+
+    }
+
     void Update(){
 
-if(Input.GetKeyDown(KeyCode.W)){
+            if(dist >= 0){
+                this.GetComponent<SpriteRenderer>().flipY = false;
 
-        this.GetComponent<Rigidbody2D>().gravityScale = -1;
-
-}
-if(Input.GetKeyDown(KeyCode.S)){
-
-        this.GetComponent<Rigidbody2D>().gravityScale = 1;
-
-}
+            }
+            if(dist <= 0){
+                this.GetComponent<SpriteRenderer>().flipY = true;
+                
+            }
 
     }
-
-    
-void OnCollisionEnter2D(Collision2D other){
-
-    if(other.gameObject.tag == "ground"){
-
-        this.GetComponent<SpriteRenderer>().flipY = false;
-
-    }
-        if(other.gameObject.tag == "techo"){
-
-        this.GetComponent<SpriteRenderer>().flipY = true;
-
-    }
-
-}
 
 }
