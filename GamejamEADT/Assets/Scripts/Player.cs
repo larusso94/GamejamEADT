@@ -72,29 +72,25 @@ public class Player : MonoBehaviour
          
 
         if (Input.GetKeyDown(KeyCode.Space) && floor)
-        {
+        {            
             player.AddForce(new Vector2(0, forcejump));
-            animator.SetBool("cambiando", true);
-            floor = false;
-            animator.SetBool("cambiando", false);
+            floor = false;            
         }
         
         if (Input.GetKeyDown(KeyCode.Space) && ceil)
-        {
-           player.AddForce(new Vector2(0, -forcejump));
-            animator.SetBool("cambiando", true);
-            ceil = false;
-            animator.SetBool("cambiando", false);
+        {            
+            player.AddForce(new Vector2(0, -forcejump));          
+            ceil = false;           
         }
         
         if(!ceil && !floor)
         {
             animator.SetBool("Saltando", true);
 
-
         }
         else
         {
+
             animator.SetBool("Saltando", false);
 
         }
@@ -105,10 +101,12 @@ public class Player : MonoBehaviour
             if (collision.gameObject.tag == "ground")
             {
                 floor = true;
-            }
+                
+        }
             if (collision.gameObject.tag == "techo")
             {
                 ceil = true;
-            }
+                
+        }
         }
     }
