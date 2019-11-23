@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 389e1b4190fddf348a07643e885cbad7
+=======
+guid: f2c875df282a4ea4fa75b0331b17a021
+>>>>>>> parent of b1058b1... Revert "dwqdqwdw"
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -75,7 +79,11 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
+<<<<<<< HEAD
     spriteID: 36e949ad97584d84badea088ce9a9008
+=======
+    spriteID: f0264c54d6ca9b1448e5c595fc4f7217
+>>>>>>> parent of b1058b1... Revert "dwqdqwdw"
     vertices: []
     indices: 
     edges: []
