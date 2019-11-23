@@ -2797,6 +2797,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8971012937962282801, guid: 31214d78e5ee43d43811d47f00a59d81,
+        type: 3}
+      propertyPath: aceleracion
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8971012937962282801, guid: 31214d78e5ee43d43811d47f00a59d81,
+        type: 3}
+      propertyPath: speedmax
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8971012937962282801, guid: 31214d78e5ee43d43811d47f00a59d81,
+        type: 3}
+      propertyPath: frenada
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 9189616462829750040, guid: 31214d78e5ee43d43811d47f00a59d81,
         type: 3}
       propertyPath: ceil
