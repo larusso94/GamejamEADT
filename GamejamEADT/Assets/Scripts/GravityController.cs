@@ -15,8 +15,7 @@ public class GravityController : MonoBehaviour
      float groundPos;
 	 public float factor;
     public float D;
-	public GameObject detectorTecho;
-	public GameObject detectorSuelo;
+
 
    void Start()
     {
