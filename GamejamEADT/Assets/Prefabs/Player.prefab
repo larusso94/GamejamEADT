@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6759999653565211056}
   - component: {fileID: 2367996547725412697}
   - component: {fileID: 854386813}
+  - component: {fileID: 854386816}
   m_Layer: 0
   m_Name: Detector Techo
   m_TagString: Untagged
@@ -26,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269153628497150290}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 18.8, z: 0}
+  m_LocalPosition: {x: 0, y: 27.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8971012937962282812}
@@ -39,7 +40,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269153628497150290}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -61,6 +62,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 8971012937962282800}
+--- !u!61 &854386816
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 269153628497150290}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.91}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 19.91, y: 1.98}
+  m_EdgeRadius: 0
 --- !u!1 &6894939305773753396
 GameObject:
   m_ObjectHideFlags: 0
@@ -72,6 +99,7 @@ GameObject:
   - component: {fileID: 4203687321457442827}
   - component: {fileID: 1778584208663227773}
   - component: {fileID: 2995591013206000067}
+  - component: {fileID: 697636185}
   m_Layer: 0
   m_Name: Detector Suelo
   m_TagString: Untagged
@@ -100,7 +128,7 @@ CapsuleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6894939305773753396}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -122,6 +150,32 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 8971012937962282800}
+--- !u!61 &697636185
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6894939305773753396}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 9.7}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 19.91, y: 1.98}
+  m_EdgeRadius: 0
 --- !u!1 &8971012937962282800
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,8 +314,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forcejump: 400
   speedmax: 20
-  aceleracion: 15
-  frenada: 200
+  aceleracion: 20
+  frenada: 30
+  ceil: 0
+  floor: 0
 --- !u!114 &1750527007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,12 +346,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 8971012937962282800}
-  ceil: {fileID: 0}
-  ground: {fileID: 0}
+  ceil: {fileID: 269153628497150290}
+  ground: {fileID: 6894939305773753396}
   factor: 0
   D: 0
-  detectorTecho: {fileID: 269153628497150290}
-  detectorSuelo: {fileID: 6894939305773753396}
 --- !u!95 &1750527008
 Animator:
   serializedVersion: 3
