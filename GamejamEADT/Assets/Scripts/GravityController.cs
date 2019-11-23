@@ -5,16 +5,18 @@ using UnityEngine;
 public class GravityController : MonoBehaviour
 {
 	[SerializeField]
-	GameObject player;
+	public GameObject player;
 	[SerializeField]
-	GameObject ceil;
+	public GameObject ceil;
 	[SerializeField]
-	GameObject ground;
+	public GameObject ground;
      
      float ceilPos;
      float groundPos;
 	 public float factor;
     public float D;
+	public GameObject detectorTecho;
+	public GameObject detectorSuelo;
 
    void Start()
     {
@@ -34,4 +36,6 @@ public class GravityController : MonoBehaviour
     	factor = (d2 - d1)/D;
         gameObject.GetComponent<Rigidbody2D>().gravityScale = factor;
     }
+
+
 }
