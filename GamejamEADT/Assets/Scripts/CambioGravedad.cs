@@ -28,6 +28,7 @@ dist = gameObject.GetComponent<GravityController>().factor;
 
                 this.GetComponent<SpriteRenderer>().flipY = true;
                 
+                
             }
 
     }
