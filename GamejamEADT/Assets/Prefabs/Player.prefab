@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6759999653565211056}
   - component: {fileID: 2367996547725412697}
-  - component: {fileID: 5191399761173844910}
+  - component: {fileID: 854386813}
   m_Layer: 0
   m_Name: Detector Techo
   m_TagString: Untagged
@@ -48,7 +48,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 3.84, y: 35.6}
   m_Direction: 0
---- !u!114 &5191399761173844910
+--- !u!114 &854386813
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -57,7 +57,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 269153628497150290}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16a3f0864d80fae48b19fa415d5b1870, type: 3}
+  m_Script: {fileID: 11500000, guid: cd1b90b3dda68304c967173200d1a45c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 8971012937962282800}
@@ -197,7 +197,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 7945d025a90363345855275177aa9ca3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -258,10 +258,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3aec38667fb33c04b98c61ee4ec99e52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 15
   forcejump: 400
-  jumpup: 0
-  jumpdown: 0
+  speedmax: 20
+  aceleracion: 15
+  frenada: 200
 --- !u!114 &1750527007
 MonoBehaviour:
   m_ObjectHideFlags: 0
