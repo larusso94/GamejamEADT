@@ -12,12 +12,13 @@ public class CambioGravedad : MonoBehaviour
 
     void Start(){
 
-        gravityScale = gameObject.GetComponent<Rigidbody2D>().gravityScale;
+        
 
     }
 
     void Update(){
 
+dist = gameObject.GetComponent<GravityController>().factor;
             if(dist >= 0){
 
                 this.GetComponent<SpriteRenderer>().flipY = false;
