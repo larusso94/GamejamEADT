@@ -61,4 +61,5 @@ public class Player : MonoBehaviour
         SetActive(true);
         "TextoSub".GetComponent<Text>.text = Text;
     }
-    /*
+    */
+}
