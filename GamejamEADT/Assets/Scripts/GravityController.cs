@@ -11,10 +11,7 @@ public class GravityController : MonoBehaviour
 	[SerializeField]
 	public GameObject ground;
      
-     float ceilPos;
-     float groundPos;
-	 public float factor;
-    public float D;
+    public float ceilPos, groundPos, factor, D;
 	public GameObject detectorTecho;
 	public GameObject detectorSuelo;
 

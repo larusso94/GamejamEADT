@@ -19,16 +19,16 @@ public class Player : MonoBehaviour
         var player = gameObject.GetComponent<Rigidbody2D>();
         float speed = player.velocity.x;
 
-        if (Input.GetKey("left") || Input.GetKey("a"))
+        if ((Input.GetKey("left") || Input.GetKey("a"))&&(ceil||floor))
         {
-            if ((Mathf.Abs(speed) < speedmax) && (ceil||floor))
+            if (Mathf.Abs(speed) < speedmax)
             {
                 player.AddForce(new Vector2((-aceleracion), 0));
                 gameObject.GetComponent<SpriteRenderer>().flipX = true;
             }
-        } else if (Input.GetKey("right") || Input.GetKey("d"))
+        } else if ((Input.GetKey("right") || Input.GetKey("d"))&&(ceil||floor))
         {
-            if ((speed < speedmax) && (ceil||floor))
+            if (speed < speedmax)
             {
                 player.AddForce(new Vector2((aceleracion), 0));
                 gameObject.GetComponent<SpriteRenderer>().flipX = false;
