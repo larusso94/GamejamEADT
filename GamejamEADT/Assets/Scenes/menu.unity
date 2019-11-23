@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 942071370}
   - component: {fileID: 942071369}
   m_Layer: 5
-  m_Name: SETTINGS
+  m_Name: EXIT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -475,12 +475,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1165779712}
-        m_MethodName: 
+      - m_Target: {fileID: 1165779717}
+        m_MethodName: Exit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -646,7 +646,7 @@ GameObject:
   - component: {fileID: 1246287817}
   - component: {fileID: 1246287816}
   m_Layer: 5
-  m_Name: SETTINGS
+  m_Name: EXIT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -702,7 +702,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SETTINGS
+  m_Text: EXIT
 --- !u!222 &1246287817
 CanvasRenderer:
   m_ObjectHideFlags: 0
