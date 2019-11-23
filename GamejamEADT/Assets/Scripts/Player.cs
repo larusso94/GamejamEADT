@@ -5,7 +5,7 @@ public class Player : MonoBehaviour
 {
 
     public float speed,forcejump;
-    public bool jump;
+    public bool jumpup, jumpdown;
     
     // Start is called before the first frame update
     void Start()
@@ -29,18 +29,29 @@ public class Player : MonoBehaviour
             gameObject.transform.Translate(speed *Time.deltaTime, 0, 0);
             gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
-        if (Input.GetKeyDown(KeyCode.Space) && jump)
+        if (Input.GetKeyDown(KeyCode.Space) && jumpup)
         {
             
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, forcejump));
-            jump = false;
+            jumpup = false;
         }
+        if (Input.GetKeyDown(KeyCode.Space) && jumpdown)
+        {
+
+            gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, -forcejump));
+            jumpdown = false;
+        }
+
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.tag == "ground")
         {
-            jump = true;
+            jumpup = true;
+        }
+        if(collision.gameObject.tag == "techo")
+        {
+            jumpdown = true;
         }
     }
 
