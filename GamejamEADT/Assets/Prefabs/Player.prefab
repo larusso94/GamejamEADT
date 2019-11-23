@@ -52,7 +52,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269153628497150290}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -123,7 +123,7 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6894939305773753396}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -312,14 +312,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 8971012937962282800}
-  ceil: {fileID: 269153628497150290}
-  ground: {fileID: 6894939305773753396}
+  ceil: {fileID: 0}
+  ground: {fileID: 0}
   ceilPos: 0
   groundPos: 0
   factor: 0
   D: 0
-  detectorTecho: {fileID: 0}
-  detectorSuelo: {fileID: 0}
+  detectorTecho: {fileID: 269153628497150290}
+  detectorSuelo: {fileID: 6894939305773753396}
 --- !u!95 &1750527008
 Animator:
   serializedVersion: 3

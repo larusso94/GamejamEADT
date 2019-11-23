@@ -207,17 +207,17 @@ PrefabInstance:
     - target: {fileID: 1797203888016454785, guid: 616d30f611ebee8498425b4216ad524c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1797203888016454785, guid: 616d30f611ebee8498425b4216ad524c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.50000095
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1797203888016454785, guid: 616d30f611ebee8498425b4216ad524c,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1797203888016454785, guid: 616d30f611ebee8498425b4216ad524c,
         type: 3}
@@ -262,7 +262,7 @@ PrefabInstance:
     - target: {fileID: 1797203888016454786, guid: 616d30f611ebee8498425b4216ad524c,
         type: 3}
       propertyPath: field of view
-      value: 77
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1797203888803139849, guid: 616d30f611ebee8498425b4216ad524c,
         type: 3}
@@ -2631,46 +2631,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8971012937962282812, guid: 31214d78e5ee43d43811d47f00a59d81,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.60914624
-      objectReference: {fileID: 0}
-    - target: {fileID: 8971012937962282812, guid: 31214d78e5ee43d43811d47f00a59d81,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.60914624
-      objectReference: {fileID: 0}
-    - target: {fileID: 8971012937962282812, guid: 31214d78e5ee43d43811d47f00a59d81,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.60914624
-      objectReference: {fileID: 0}
-    - target: {fileID: 8971012937962282813, guid: 31214d78e5ee43d43811d47f00a59d81,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 2.46
-      objectReference: {fileID: 0}
-    - target: {fileID: 8971012937962282813, guid: 31214d78e5ee43d43811d47f00a59d81,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 8.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 8971012937962282801, guid: 31214d78e5ee43d43811d47f00a59d81,
-        type: 3}
-      propertyPath: aceleracion
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8971012937962282801, guid: 31214d78e5ee43d43811d47f00a59d81,
-        type: 3}
-      propertyPath: speedmax
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 8971012937962282801, guid: 31214d78e5ee43d43811d47f00a59d81,
-        type: 3}
-      propertyPath: frenada
-      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 9189616462829750040, guid: 31214d78e5ee43d43811d47f00a59d81,
         type: 3}
