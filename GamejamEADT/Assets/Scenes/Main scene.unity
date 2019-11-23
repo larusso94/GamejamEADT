@@ -1249,9 +1249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SubtituloGO: {fileID: 1129724735}
   Textosub: {fileID: 1505454558}
-  Text: " \u201CDiario de bit\xE1cora. 736472.21,28: Los espec\xEDmenes se han evaporado,
-    mi esposa y yo hemos decidido marcharnos. Ma\xF1ana partiremos de vuelta a la
-    Tierra.\u201D"
+  Text: "No se abre, tendr\xE9 que dar la vuelta."
 --- !u!4 &314775890
 Transform:
   m_ObjectHideFlags: 0
@@ -2874,9 +2872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SubtituloGO: {fileID: 1129724735}
   Textosub: {fileID: 1505454558}
-  Text: " \u201CDiario de bit\xE1cora. 736472.21,28: Los espec\xEDmenes se han evaporado,
-    mi esposa y yo hemos decidido marcharnos. Ma\xF1ana partiremos de vuelta a la
-    Tierra.\u201D"
+  Text: Esta empresa y esos bichos lo han arruinado todo. Todo.
 --- !u!4 &1284983091
 Transform:
   m_ObjectHideFlags: 0
@@ -3181,9 +3177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SubtituloGO: {fileID: 1129724735}
   Textosub: {fileID: 1505454558}
-  Text: " \u201CDiario de bit\xE1cora. 736472.21,28: Los espec\xEDmenes se han evaporado,
-    mi esposa y yo hemos decidido marcharnos. Ma\xF1ana partiremos de vuelta a la
-    Tierra.\u201D"
+  Text: "\u201CDATE LA VUELTA O SUFRIR\xC1S LAS CONSECUENCIAS\u201D"
 --- !u!4 &1523434966
 Transform:
   m_ObjectHideFlags: 0
@@ -3802,9 +3796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SubtituloGO: {fileID: 1129724735}
   Textosub: {fileID: 1505454558}
-  Text: " \u201CDiario de bit\xE1cora. 736472.21,28: Los espec\xEDmenes se han evaporado,
-    mi esposa y yo hemos decidido marcharnos. Ma\xF1ana partiremos de vuelta a la
-    Tierra.\u201D"
+  Text: "\xBFPodr\xEDa ser que haya sobrevivido?"
 --- !u!4 &1658702506
 Transform:
   m_ObjectHideFlags: 0
@@ -4202,9 +4194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SubtituloGO: {fileID: 1129724735}
   Textosub: {fileID: 1505454558}
-  Text: " \u201CDiario de bit\xE1cora. 736472.21,28: Los espec\xEDmenes se han evaporado,
-    mi esposa y yo hemos decidido marcharnos. Ma\xF1ana partiremos de vuelta a la
-    Tierra.\u201D"
+  Text: "Dios\u2026 Por un segundo pens\xE9 que\u2026 Lo siento\u2026"
 --- !u!4 &1796153314
 Transform:
   m_ObjectHideFlags: 0
@@ -5009,9 +4999,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SubtituloGO: {fileID: 1129724735}
   Textosub: {fileID: 1505454558}
-  Text: " \u201CDiario de bit\xE1cora. 736472.21,28: Los espec\xEDmenes se han evaporado,
-    mi esposa y yo hemos decidido marcharnos. Ma\xF1ana partiremos de vuelta a la
-    Tierra.\u201D"
+  Text: Nos han dejado tirado a todos.
 --- !u!4 &2058644243
 Transform:
   m_ObjectHideFlags: 0
