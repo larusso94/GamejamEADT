@@ -7,8 +7,7 @@ public class CambioGravedad : MonoBehaviour
 {
 
     public GameObject Player;
-    public float dist;
-    public float gravityScale;
+    public float factor, vel, gravityScale;
 
     void Start(){
 
@@ -18,13 +17,14 @@ public class CambioGravedad : MonoBehaviour
 
     void Update(){
 
-dist = gameObject.GetComponent<GravityController>().factor;
-            if(dist >= 0){
+            factor = gameObject.GetComponent<GravityController>().factor;
+            vel = gameObject.GetComponent<Rigidbody2D>().velocity.y;
+            if(factor >= 0 && vel <= 0){
 
                 this.GetComponent<SpriteRenderer>().flipY = false;
 
             }
-            if(dist <= 0){
+            if(factor <= 0 && vel >= 0){
 
                 this.GetComponent<SpriteRenderer>().flipY = true;
                 
