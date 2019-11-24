@@ -1670,8 +1670,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a79cc8aaffde83746b7873aeff168930, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.565
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3962,8 +3962,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a79cc8aaffde83746b7873aeff168930, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.565
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4525,8 +4525,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a79cc8aaffde83746b7873aeff168930, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.565
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5392,8 +5392,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a79cc8aaffde83746b7873aeff168930, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.565
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5988,8 +5988,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a79cc8aaffde83746b7873aeff168930, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.565
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7296,8 +7296,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a79cc8aaffde83746b7873aeff168930, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 1
+  m_PlayOnAwake: 0
+  m_Volume: 0.565
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -7612,9 +7612,9 @@ MonoBehaviour:
   clip: {fileID: 8300000, guid: a79cc8aaffde83746b7873aeff168930, type: 3}
   SubtituloGO: {fileID: 1129724735}
   Textosub: {fileID: 1505454558}
-  Text: " \u201CDiario de bit\xE1cora. 736472.21,28: Los espec\xEDmenes se han evaporado,
-    mi esposa y yo hemos decidido marcharnos. Ma\xF1ana partiremos de vuelta a la
-    Tierra.\u201D"
+  Text: " \u201CDiario de bit\xE1cora. 736472.21,28: Los espec\xEDmenes se han escapado
+    de sus jaulas. Mi esposa y yo hemos decidido marcharnos. Ma\xF1ana partiremos
+    de vuelta a la Tierra.\u201D"
 --- !u!4 &2131079493
 Transform:
   m_ObjectHideFlags: 0
@@ -7656,8 +7656,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a79cc8aaffde83746b7873aeff168930, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.544
+  m_PlayOnAwake: 0
+  m_Volume: 0.565
   m_Pitch: 1
   Loop: 0
   Mute: 0
