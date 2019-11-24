@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class DeactivateController : MonoBehaviour
 {
+
+    public GameObject camara;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +21,11 @@ public class DeactivateController : MonoBehaviour
     	if (other.gameObject.tag == "Player"){
     		other.gameObject.GetComponent<Player>().enabled = false;
     		other.gameObject.GetComponent<Animator>().SetBool("corriendo", false);
+            other.gameObject.GetComponent<Animator>().SetTrigger("Final");
     		other.gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
+            camara.GetComponent<Animator>().SetBool("Final", true);
+            
+            
     	}
     }
 }

@@ -297,7 +297,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 8971012937962282800}
-  dist: 0
+  factor: 0
+  vel: 0
   gravityScale: 0
 --- !u!114 &9189616462829750040
 MonoBehaviour:
